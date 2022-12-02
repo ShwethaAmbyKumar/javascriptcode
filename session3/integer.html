@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Accepts 2 integers and displays larger</title>
+</head>
+<body>
+
+<script>
+function integer(a,b) {
+
+    var isInteger = Number.isInteger(a) && Number.isInteger(b);
+
+    if(isInteger && a === b)
+        document.write("Both numbers are equal!");
+
+    else if(isInteger)
+        document.write("The larger number is " + Math.max(a,b));
+
+    else
+        document.write("Please add an integer!");
+
+}
+
+integer(-1,3);
+</script>
+
+</body>
+</html>
